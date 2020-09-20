@@ -21,7 +21,7 @@ $("#profile-form").on('submit', (evt) => {
 
   $.post('/api/profile', formData, (response) => {
     $('#profiles').append(`
-    <li>${response.name} the ${response.occupation} is ${response.age}</li>
+    <li>${response.fullname} the ${response.occupation} is ${response.age}</li>
     `);
   });
 });
